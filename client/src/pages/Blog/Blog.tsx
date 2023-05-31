@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./blog.css";
-import { useNavigate } from "react-router-dom";
 import ArticleList from "./ArticleList";
 import Loading from "../../assets/images/rhombus.gif";
 
@@ -17,7 +16,6 @@ const serverURL =
 
 const Blog: React.FC = () => {
   // const SERVER_URL = process.env.SERVER || ""; //why isn't it working??
-  let navigate = useNavigate();
   const [articlesData, setArticlesData] = useState<Articles>({ articles: [] });
   const [isLoading, setIsLoading] = useState(true);
 

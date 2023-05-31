@@ -16,14 +16,12 @@ const serverURL =
 
   useEffect(() => {
     // Fetch the article data from the server
-    // fetch("https://bardabun-server.vercel.app/api/product") //const res = await fetch(SERVER_URL + "/api/product");
     fetch(`${serverURL}/api/product`) 
-      // fetch("/api/product")
       .then((response) => response.json())
       .then((data) => {
         // Find the article with the matching headline
         let chosen = data.articles.find(
-          (art) => params.userId === art.headline
+          (art: { headline: string; }) => params.userId === art.headline
         );
 
         if (chosen) {
@@ -33,7 +31,7 @@ const serverURL =
           console.log("Couldn't find the article");
         }
       });
-  }, []);
+  }, [params.userId, serverURL]);
 
   return (
     <div className="article-page">
