@@ -7,9 +7,17 @@ const Article = () => {
   let params = useParams();
   const [article, setArticle] = useState({});
 
+  console.log("This is the NODE_ENV: xxxx" + process.env.NODE_ENV);
+// Connect to the Socket.IO server
+const serverURL =
+  process.env.NODE_ENV === "production"
+    ? "https://bardabun-server.vercel.app/"
+    : "http://localhost:5000";
+
   useEffect(() => {
     // Fetch the article data from the server
-    fetch("https://bardabun-server.vercel.app/api/product") //const res = await fetch(SERVER_URL + "/api/product");
+    // fetch("https://bardabun-server.vercel.app/api/product") //const res = await fetch(SERVER_URL + "/api/product");
+    fetch(`${serverURL}/api/product`) 
       // fetch("/api/product")
       .then((response) => response.json())
       .then((data) => {
