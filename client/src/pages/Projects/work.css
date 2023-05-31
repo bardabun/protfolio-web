@@ -1,0 +1,176 @@
+body {
+  box-sizing: border-box;
+}
+
+.roll-work-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: 'intro showRide' 'showRideExp showRide ' 'tech tech' 'reactNative expo' 'googleMaps firebase' 'joiningReq techChall' 'joiningReq joiningReqExp';
+  width: clamp(40rem, 100% ,120rem);
+  margin-top: 1rem;
+  padding-top: 3rem;
+} 
+
+.roadUp{
+  position: absolute;
+  width: 370px;
+  transform: rotate(-20deg); 
+  /* height:  clamp(50vh, 70% ,70vh); */
+}
+
+.card-title{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  color: #282d35;
+  /* color: whitesmoke; */
+}
+
+.intro-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: whitesmoke;
+  line-height: 2rem;
+  /* width: 450px; */
+}
+
+.showRideExp{
+  grid-area: showRideExp;
+  margin: 5rem 0 20rem 9rem;   /* top, right, bottom, left */
+  padding: 1rem 3rem;
+  background-color: antiquewhite;
+  box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.showRideExp-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #282d35;
+  line-height: 2rem;
+}
+
+.showRide {
+  grid-area: showRide;
+  justify-self: center;
+  margin: 10rem 0 ;
+}
+
+.showRide > h2{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+}
+.showRide > video{
+  border-radius: 5px;
+  /* border: solid 10px #21222a; */
+  box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 200ms ease-in;
+
+}
+.showRide > video:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.tech{
+  grid-area: tech;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  justify-self: center ;
+  margin-bottom: 8rem;
+}
+
+div[class ^= "card"]{
+  display: flex;
+  justify-self: center ;
+  padding: 0.5rem 1rem;
+  color: #282d35;
+  background-color: antiquewhite;
+  box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+div[class ^= "card"] > img{
+  width: auto;
+  height: 100px;
+}
+
+.card-reactNative {
+  grid-area: reactNative;
+  margin: 0 0 10rem 4rem;
+}
+.card-expo {
+  grid-area: expo;
+  margin: 10rem 4rem 0 0;
+}
+.card-googleMaps {
+  grid-area: googleMaps;
+  margin: 0 0 10rem 4rem;
+}
+.card-firebase {
+  grid-area: firebase;
+  margin: 10rem 4rem 0 0;
+}
+
+.roadFlat{
+  grid-area: roadFlat;
+  justify-self: center;
+  width: clamp(40rem, 100% ,80rem);
+  margin: 0 4rem 4rem 4rem;
+}
+
+.techChall-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: whitesmoke;
+  line-height: 2rem;
+}
+
+.joiningReqExp{
+  grid-area: joiningReqExp;
+  margin: 10rem 15rem 15rem 0rem;   /* top, right, bottom, left */
+  padding: 1rem 2.5rem;
+  background-color: antiquewhite;
+  box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.joiningReqExp-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #282d35;
+  line-height: 2rem;
+  list-style-position: outside;
+  list-style-type: '✨';
+}
+
+.joiningReq {
+  grid-area: joiningReq;
+  justify-self: center;
+  margin: 10rem 0rem;
+}
+
+.joiningReq > h2{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+}
+.joiningReq > video{
+  border-radius: 5px;
+  box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 200ms ease-in;
+
+}
+.joiningReq > video:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .intro-text {
+    margin: 10px 3% 10px 3%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+}

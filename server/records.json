@@ -1,0 +1,46 @@
+{
+"articles":
+[
+  { 
+    "headline": "Why Should You Use React",
+    "alternativeHeadline": "and the women who love them",
+    "image": "",
+    "editor": "John Doe", 
+    "genre": "search engine optimization", 
+    "keywords": "seo sales b2b", 
+    "wordcount": "1120",
+    "datePublished": "2015-09-20",
+    "dateModified": "2015-09-20",
+    "description": "and this we will observe, and our will is that it be observed in good faith by our heirs forever. We have also granted to all freemen of our kingdom, for us and our heirs forever, all the underwritten liberties, to be had and held by them and their heirs, of us and our heirs forever.",
+    "articleBody": 
+    {
+      "title": "Why Should You Use React",
+      "subtitle": "What is React?",
+      "intro": "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. React simplifies the process of building interactive user interfaces for web and mobile applications, which used to be complex for front-end developers. Without React, managing the state and updates to the UI can be challenging, especially for developers who are new to web development.",
+      "sections": [
+        {
+          "title": "Benefits of using React",
+          "content": [
+            "Reusable components: React enables you to build reusable components that can be shared and used again in different parts of your app. This helps you streamline the process of maintaining and updating your UI. A component in React is a piece of code that represents a part of a user interface. It's typically used to create small, reusable elements like buttons, form inputs, and cards. These components can be combined to build more complex UIs. "
+          , "By using a virtual DOM(Document Object Model), React can optimize updates to the UI and achieve faster and more efficient rendering. virtual DOM is an abstraction of the actual DOM. This virtual DOM is a lightweight, in-memory representation of the actual DOM, and it helps React to update the UI efficiently by reducing the number of DOM mutations required."
+          , "Strong community: React has a thriving community of developers who are actively involved in the library and create a wealth of resources for learning and using React."
+        ]
+        },
+        {
+          "title": "One more thing better for you to know about React",
+          "content": "React also has a feature called \"hooks\" which enable the use of state and other React functionality within functional components. This can enhance the flexibility and modularity of your code, making it easier to comprehend and sustain."
+        },
+        {
+          "title": "Conclusion and encouraging people",
+          "content": 
+            "In conclusion, React is a powerful and popular JavaScript library for building user interfaces. It offers a declarative approach to building efficient and reusable components, and its virtual DOM allows for efficient updates and re-renders of the UI. Its use of functional components and hooks make it an excellent choice for modern front-end development. "
+        },
+        {
+          "title": "",
+          "content": "If you are looking to build engaging and dynamic user interfaces, I highly recommend giving React a try. Its wide adoption and active community make it a great choice for any project."
+        }
+      ]
+    }
+  }
+]
+}

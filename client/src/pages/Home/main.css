@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  position: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  color: hsl(39, 33%, 87%);
+  font-family: "Roboto Slab", sans-serif;
+  /* background-image: url(../images/layered-waves2.svg);
+  background-repeat: no-repeat;
+  background-size: 100%; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.main--title {
+  margin: 3rem 0rem 0rem 10rem; 
+  font-size: clamp(3.8rem, 5.5vw, 6rem);
+  letter-spacing: 0.05em;
+  /* font-family: "Roboto Slab", sans-serif; */
+  font-weight: 300;
+}
+
+.main--title span {
+  display: block;
+}
+
+.main--title span b {
+  font-weight: 400;
+}
+
+.main--subtitle {
+  margin: 3rem 0rem 0rem 10rem;
+  margin-top: 46px;
+  max-width: 400px;
+  font-size: clamp(1.5rem, 2vw, 2rem);   
+  font-weight: 100;
+  color: #fbcaff;
+}
+
+.main--subtitle span {
+  font-weight: 300;
+}
+
+.main-img {
+  /* position: absolute; */
+  grid-area: 1 / 2 / span 2 / span 1;
+  margin: 5rem 0rem 0rem 10rem;
+  top: 10rem;
+  right: 12rem;
+  /* border-radius: 60% 100% 40% 40%; */
+  /* clamp(MIN, VAL, MAX) is resolved as max(MIN, min(VAL, MAX)) */
+  width: clamp(20vw, 50% ,40vw);
+  height:  clamp(50vh, 70% ,70vh);
+  object-fit: cover;
+}
+
+h1:hover ~ .cursor{
+  transform: scale(3);
+}
+
+.waves-img{
+  grid-area: 3 / 1 / span 1 / span 2;
+  /* width: auto;
+  height: auto; */
+  margin-top: -41rem;
+  margin-bottom: -10rem;
+  z-index: -1;
+}
+
+.cursor{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: #715df2;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+  transition-duration: 0.1s;
+}
+
+@media (max-width: 960px) {  
+  .main-img {
+    visibility: hidden;
+  }
+  .main--title {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+  .main--subtitle {
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+}

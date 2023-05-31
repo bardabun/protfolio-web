@@ -1,0 +1,19 @@
+{
+  "name": "protfolio-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bardabun/protfolio-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bardabun/protfolio-web/issues"
+  },
+  "homepage": "https://github.com/bardabun/protfolio-web#readme"
+}

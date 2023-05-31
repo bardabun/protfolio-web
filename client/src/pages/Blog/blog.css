@@ -1,0 +1,30 @@
+body {
+  box-sizing: border-box;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+}
+
+.roll {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(39, 33%, 87%);
+
+  width: clamp(50rem, 100% ,80rem);
+  margin-top: 1rem;
+  padding-top: 3rem;
+  border-radius: 8px;
+
+} 
+
+.loading-gif{
+  border-radius: 20%;
+}
+.loading-text {
+  color:black;
+  font-size: 1.2rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+}

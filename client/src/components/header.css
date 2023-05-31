@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  height: 80px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
+  color: hsl(39, 33%, 87%);
+  padding: 20px;
+}
+
+.header--image {
+  margin: 2rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  cursor: pointer;
+  /* border: 1px solid #ddd; */
+}
+
+.header--inLogo {
+  display: none;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--buttons {
+  display: flex;
+  /* justify-items: space-between; */
+  flex-direction: row;
+  /* flex: 0 0 auto; */
+  margin-right: auto;
+  width: 175px;
+  font-size: 12px;
+}
+
+.header button {
+  position: relative;
+  background-color: #282d35;
+  border-radius: 20% 90% 20%;
+  color: antiquewhite;
+  font-size: 1.2rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  border: 0;
+  padding: 1rem 1rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+
+  /* transition: 0.8s; */
+}
+
+.header button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: wheat;
+
+  transform: scaleX(0) rotate(0);
+  transform-origin: left;
+  transition: transform 200ms ease-in;
+}
+
+.button--work:hover::after {
+  transform: scaleX(1) rotate(1deg);
+}
+
+.button--blog:hover::after {
+  transform: scaleX(1) rotate(-2deg);
+}
+
+.button--contact:hover::after {
+  transform: scaleX(1) rotate(1.5deg);
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    background: linear-gradient(90deg, #282d35 50%, #21222a 100%);
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .contact-in {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+    cursor: pointer;
+    transition: margin-right 1s;
+  }
+  .header--inLogo {
+    display: block;
+    height: 45px;
+    padding: 7px;
+    background-color: wheat;
+    border-radius: 20%;
+    /* transition: margin-right 1s, background-color 0.5s; */
+  }
+  .contact-in > p {
+    color: wheat;
+    transition: margin-right 1.5s, color 0.5s;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;  
+  }
+  /* .header--inLogo:hover {
+    margin-right: 3.5rem;
+    background-color: white;
+  } */
+  .contact-in:hover{
+    margin-right: 3.5rem;
+    /* color: white; */
+  }
+}

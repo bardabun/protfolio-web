@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.waves-img{
+  position:relative;
+  /* width: auto;
+  height: auto; */
+  /* margin-top: -41rem;
+  margin-bottom: -10rem; */
+  z-index: -1;
+}

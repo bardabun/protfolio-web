@@ -1,0 +1,49 @@
+.styled-article{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+  color: white;
+  line-height: 2rem;
+  margin: 2rem;
+}
+
+.article-title {
+  color: #715df2;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.article-subtitle {
+  /* color: #FFCE44; */
+  color: #fdd641;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.article-intro,
+.article-section,
+.article-section-content {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.article-section-title{
+  color: #fdd641;
+  font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .styled-article {
+    margin: 10px 3% 10px 3%;
+    width:600px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .styled-article {
+    width: 900px;
+  }
+}
