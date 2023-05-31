@@ -7,7 +7,10 @@ const FILE_PATH = process.env.FILE_PATH || "./records.json";
 // Enable CORS for all routes
 router.use((req, res, next) => {
   console.log("Setting CORS headers");
-  res.set("Access-Control-Allow-Origin", "https://bardabun.vercel.app");
+  res.set(
+    "Access-Control-Allow-Origin",
+    "https://protfolio-web-bar.vercel.app"
+  );
   // res.set(
   //   "Access-Control-Allow-Methods",
   //   "GET, HEAD, POST, PUT, DELETE, PATCH"
