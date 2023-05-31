@@ -11,7 +11,7 @@ const Article = () => {
 // Connect to the Socket.IO server
 const serverURL =
   process.env.NODE_ENV === "production"
-    ? "https://protfolio-web-server.vercel.app/"
+    ? "https://protfolio-web-server.vercel.app"
     : "http://localhost:5000";
 
   useEffect(() => {
