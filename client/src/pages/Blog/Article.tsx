@@ -15,7 +15,7 @@ const serverURL =
     : "http://localhost:5000";
 
   useEffect(() => {
-    // Fetch the article data from the server
+    // Fetch the article data from the server.
     fetch(`${serverURL}/api/product`) 
       .then((response) => response.json())
       .then((data) => {
