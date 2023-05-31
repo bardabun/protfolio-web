@@ -9,7 +9,7 @@ const FILE_PATH = process.env.FILE_PATH || "./records.json";
 router.use(cors());
 router.get("/", (req, res) => {
   fs.readFile(FILE_PATH, "utf8", (err, data) => {
-    console.log(process.env.FILE_PATH);
+    console.log("=>" + process.env.FILE_PATH);
     if (err) {
       res.send(err);
     } else {
