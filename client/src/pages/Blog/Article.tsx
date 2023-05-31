@@ -19,7 +19,7 @@ const serverURL =
     fetch(`${serverURL}/api/product`) 
       .then((response) => response.json())
       .then((data) => {
-        // Find the article with the matching headline
+        // Find the article with the matching headline.
         let chosen = data.articles.find(
           (art: { headline: string; }) => params.userId === art.headline
         );
