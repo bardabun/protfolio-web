@@ -12,7 +12,7 @@ interface Articles {
 }
 const serverURL =
   process.env.NODE_ENV === "production"
-    ? "https://bardabun-server.vercel.app/"
+    ? "https://protfolio-web-server.vercel.app/"
     : "http://localhost:5000";
 
 const Blog: React.FC = () => {
