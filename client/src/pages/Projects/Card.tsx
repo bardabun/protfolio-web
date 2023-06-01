@@ -1,4 +1,4 @@
-import React, { FC, useRef, useEffect, useState } from "react";
+import React, { FC } from "react";
 import "./card.css";
 import { motion } from "framer-motion";
 import useIntersectionObserver from "../../hook/IntersectionObserver";

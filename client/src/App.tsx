@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./app.css";
 import Header from "./components/Header";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
@@ -8,6 +7,9 @@ import Work from "./pages/Projects/Work";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
 import Article from "./pages/Blog/Article";
+import Carporate from "./pages/Projects/Carporate";
+
+import "./app.css";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/article/:userId" element={<Article />} />
+        <Route path="/work/carporate" element={<Carporate />} />
         <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<ErrorPage />} />
