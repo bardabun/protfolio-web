@@ -1,4 +1,7 @@
 const express = require("express");
+
+require("dotenv").config();
+
 const product = require("./api/product");
 const app = express();
 

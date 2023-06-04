@@ -1,9 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
-
 const fs = require("fs");
-const FILE_PATH = process.env.REACT_APP_FILE_PATH;
+
+require("dotenv").config();
+
+const FILE_PATH = process.env.FILE_PATH;
 
 // Enable CORS for all routes
 router.use(cors());
