@@ -9,6 +9,7 @@ interface Articles {
     articleBody: string;
   }>;
 }
+console.log("This is the REACT_APP_SERVER_URL: " + process.env.REACT_APP_SERVER_URL);
 const serverURL = process.env.REACT_APP_SERVER_URL;
 
 const Blog: React.FC = () => {

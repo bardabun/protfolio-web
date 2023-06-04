@@ -7,7 +7,6 @@ const Article = () => {
   let params = useParams();
   const [article, setArticle] = useState({});
 
-  console.log("This is the REACT_APP_SERVER_URL: " + process.env.REACT_APP_SERVER_URL);
 // Connect to the Socket.IO server
 const serverURL = process.env.REACT_APP_SERVER_URL;
 
