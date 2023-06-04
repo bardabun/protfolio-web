@@ -7,12 +7,9 @@ const Article = () => {
   let params = useParams();
   const [article, setArticle] = useState({});
 
-  console.log("This is the NODE_ENV: xxxx" + process.env.NODE_ENV);
+  console.log("This is the REACT_APP_SERVER_URL: " + process.env.REACT_APP_SERVER_URL);
 // Connect to the Socket.IO server
-const serverURL =
-  process.env.NODE_ENV === "production"
-    ? "https://protfolio-web-server.vercel.app"
-    : "http://localhost:5000";
+const serverURL = process.env.REACT_APP_SERVER_URL;
 
   useEffect(() => {
     // Fetch the article data from the server.

@@ -9,13 +9,9 @@ interface Articles {
     articleBody: string;
   }>;
 }
-const serverURL =
-  process.env.NODE_ENV === "production"
-    ? "https://protfolio-web-server.vercel.app"
-    : "http://localhost:5000";
+const serverURL = process.env.REACT_APP_SERVER_URL;
 
 const Blog: React.FC = () => {
-  // const SERVER_URL = process.env.SERVER || ""; //why isn't it working??
   const [articlesData, setArticlesData] = useState<Articles>({ articles: [] });
   const [isLoading, setIsLoading] = useState(true);
 
