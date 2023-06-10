@@ -10,29 +10,13 @@
   width: 240px;
   text-align: center;
   transition-duration: 0.3s;
-  /* text-decoration: none; */
   overflow: hidden;
   cursor: pointer;
-  /* display: inline-block; */
   border-radius: 4px;
   margin: 2rem;
 }
 
-/* .button--general:after {
-  background: #f1f1f1;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
-} */
-
 .button--general:active:after {
-  padding: 0;
-  margin: 0;
   opacity: 1;
   transition: 0s;
 }

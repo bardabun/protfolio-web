@@ -22,10 +22,19 @@ return (
       <motion.div className="button-container--work"
       animate={{ x: -100 }}
       transition={{ type: "spring", stiffness: 100 }}>
-        <Button action={() => handleGoTo("/work/carporate")}>
+        <Button 
+        action={() => handleGoTo("/work/carporate")}
+        text="React mobile app for Android and iOS that connects 
+        passengers and drivers for making cooperative rides, 
+        which reduced users' travels planning time."
+        >
           Carporate
         </Button>
-        <Button action={() => handleGoTo(CODEPAIRUP_URL)}>
+        <Button action={() => handleGoTo(CODEPAIRUP_URL)}
+        text= {`Develop a collaborative web app where users answer questions. 
+        The 'Mentor' has a fixed code block, while others can dynamically edit their code. 
+        Live changes are reflected for all users. Submit answers for feedback.`}
+        >
           Code Pair Up
         </Button>
       </motion.div>

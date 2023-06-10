@@ -19,7 +19,6 @@ const Blog: React.FC = () => {
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(`${serverURL}/api/product`);
-      // const res = await fetch("/api/product");
       const data: Articles = await res.json();
       setArticlesData(data);
       setIsLoading(false);
