@@ -10,7 +10,7 @@ body {
 .roll {
   display: flex;
   justify-content: center;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
 
   width: clamp(50rem, 100% ,80rem);
   margin-top: 1rem;
@@ -25,6 +25,6 @@ body {
 .loading-text {
   color:black;
   font-size: 1.2rem;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
 }

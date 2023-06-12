@@ -24,16 +24,16 @@ body {
 .article-description {
   font-size: 1.1rem;
   line-height: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
 }
 
 .btn-read-more{
-  background-color: var(--background-primary);
+  background-color: var(--background-primary-color);
   color:antiquewhite;
   padding: 0.5rem;
   border-radius: 2px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;

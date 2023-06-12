@@ -5,6 +5,7 @@ import App from "./App";
 
 import "./index.css";
 import "./components/styles/colors.css"
+import "./components/styles/fonts.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

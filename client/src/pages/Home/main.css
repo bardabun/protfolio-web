@@ -6,7 +6,7 @@ main {
   position: flex;
   display: grid;
   grid-template-columns: auto auto;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: var(--primary-font);
   /* background-image: url(../images/layered-waves2.svg);
   background-repeat: no-repeat;
   background-size: 100%; */
@@ -49,7 +49,7 @@ main {
   max-width: 400px;
   font-size: clamp(1.5rem, 2vw, 2rem);   
   font-weight: 100;
-  color: var(--tertiary);
+  color: var(--tertiary-color);
 }
 
 .main--subtitle span {

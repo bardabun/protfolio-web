@@ -65,7 +65,7 @@ const Work: React.FC<Props> = () => {
           <br />
           So our idea was to develop carpooling platform that provides{" "}
           <u>an easy way to find a shared ride!</u>
-          <br /> We called it <b style={{ color: "var(--background-primary)" }}>Carporate </b>
+          <br /> We called it <b style={{ color: "var(--background-primary-color)" }}>Carporate </b>
           <span style={{ fontSize: "1.7rem" }}>🚗</span>
           <br />
           <br />

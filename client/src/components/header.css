@@ -39,11 +39,11 @@
 
 .header button {
   position: relative;
-  background-color: var(--background-primary);
+  background-color: var(--background-primary-color);
   border-radius: 20% 90% 20%;
   color: antiquewhite;
   font-size: 1.2rem;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
   border: 0;
   padding: 1rem 1rem;
@@ -103,7 +103,7 @@
   .contact-in > p {
     color: wheat;
     transition: margin-right 1.5s, color 0.5s;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: var(--primary-font);
     font-weight: 400;  
   }
   .contact-in:hover{
