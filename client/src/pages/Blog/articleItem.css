@@ -44,7 +44,7 @@ body {
 
  .link {
   text-decoration: none;
-  color: #282d35;
+  color: var(--background-primary-color);
  }
 
 @media only screen and (min-width: 600px) {
