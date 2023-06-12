@@ -1,9 +1,9 @@
 .button--general {
   position: relative;
-  background-color: var(--secondary);
+  background-color: var(--secondary-color);
   border: none;
   font-size: 1.7rem;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
   color: #FFFFFF;
   padding: 20px;
@@ -38,8 +38,8 @@
 }
 
 .button--general:hover {
-  background-color: var(--tertiary);
-  color:var(--secondary);
+  background-color: var(--tertiary-color);
+  color:var(--secondary-color);
 }
 
 .button--general:hover span {
