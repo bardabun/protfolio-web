@@ -10,7 +10,7 @@ body {
 .roll {
   display: flex;
   justify-content: center;
-  background-color: var(--primary-color);
+  background-color: wheat;
 
   width: clamp(50rem, 100% ,80rem);
   margin-top: 1rem;
