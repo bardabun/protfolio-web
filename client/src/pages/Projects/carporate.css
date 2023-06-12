@@ -21,7 +21,7 @@ body {
 .card-title{
   font-family: "Roboto Slab", sans-serif;
   font-weight: 600;
-  color: #282d35;
+  color: var(--background-primary);
   /* color: whitesmoke; */
 }
 
@@ -46,7 +46,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
-  color: #282d35;
+  color: var(--background-primary);
   line-height: 2rem;
 }
 
@@ -84,7 +84,7 @@ div[class ^= "card"]{
   display: flex;
   justify-self: center ;
   padding: 0.5rem 1rem;
-  color: #282d35;
+  color: var(--background-primary);
   background-color: antiquewhite;
   box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
@@ -138,7 +138,7 @@ div[class ^= "card"] > img{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
-  color: #282d35;
+  color: var(--background-primary);
   line-height: 2rem;
   list-style-position: outside;
   list-style-type: '✨';

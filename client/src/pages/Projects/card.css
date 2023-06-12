@@ -1,6 +1,6 @@
 .container{
   padding: 2rem 3rem;
-  background-color: #715df2;
+  background-color: var(--secondary);
   box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   

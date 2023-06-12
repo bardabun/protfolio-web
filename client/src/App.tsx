@@ -9,8 +9,6 @@ import ErrorPage from "./pages/ErrorPage";
 import Article from "./pages/Blog/Article";
 import Carporate from "./pages/Projects/Carporate";
 
-import "./app.css";
-
 const App: React.FC = () => {
   return (
     <div className="web--container">

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./main.css";
 import avatarPic from "../../assets/images/avatar.png";
 import { motion } from "framer-motion";
+
+import "./main.css";
 
 interface Props {}
 

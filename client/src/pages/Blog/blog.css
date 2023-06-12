@@ -10,7 +10,7 @@ body {
 .roll {
   display: flex;
   justify-content: center;
-  background-color: hsl(39, 33%, 87%);
+  background-color: var(--primary);
 
   width: clamp(50rem, 100% ,80rem);
   margin-top: 1rem;
