@@ -7,7 +7,6 @@ const Article = () => {
   let params = useParams();
   const [article, setArticle] = useState({});
 
-// Connect to the Socket.IO server
 const serverURL = process.env.REACT_APP_SERVER_URL;
 
   useEffect(() => {
@@ -16,7 +15,7 @@ const serverURL = process.env.REACT_APP_SERVER_URL;
       .then((response) => response.json())
       .then((data) => {
         // Find the article with the matching headline
-        let chosen = data.articles.find(
+        let chosen = data.find(
           (art: { headline: string; }) => params.userId === art.headline
         );
 

@@ -4,11 +4,20 @@ import ArticleList from "./ArticleList";
 import Loading from "../../assets/images/rhombus.gif";
 
 interface Articles {
-  articles: Array<{
+  articles: {
     headline: string;
-    articleBody: string;
-  }>;
+    articleBody: {
+      title: string;
+      subtitle: string;
+      intro: string;
+      sections: {
+        title: string;
+        content: string[];
+      }[];
+    };
+  }[];
 }
+
 console.log("This is the REACT_APP_SERVER_URL: " + process.env.REACT_APP_SERVER_URL);
 const serverURL = process.env.REACT_APP_SERVER_URL;
 
@@ -19,8 +28,8 @@ const Blog: React.FC = () => {
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(`${serverURL}/api/product`);
-      const data: Articles = await res.json();
-      setArticlesData(data);
+      const data = await res.json();
+      setArticlesData({ articles: data });
       setIsLoading(false);
     }
     fetchData();
