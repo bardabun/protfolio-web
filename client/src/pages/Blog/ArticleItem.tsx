@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./articleItem.css";
 
 interface Article {
@@ -15,7 +15,6 @@ const ArticleItem: React.FC<Props> = ({ article }) => {
   return (
     <div>
       <Link className="link" to={`/article/${article.headline}`}>
-        {/*Reade on state */}
         <div className="article-box">
           <h2 className="article-headline">{article.headline}</h2>
           <p className="article-description">{article.description}</p>
