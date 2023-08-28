@@ -1,0 +1,11 @@
+.htmlScreen video
+{
+    width: 287px; /* 268 */
+    height: 615px; /* 595 */
+    border: none;
+    border-radius: 39px;
+    overflow: 'hidden';
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(46, 42, 42);
+}

@@ -4,7 +4,7 @@ body {
 
 .roll-work-page {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 2.5fr 2fr;
   grid-template-areas: 'intro showRide' 'showRideExp showRide ' 'tech tech' 'reactNative expo' 'googleMaps firebase' 'joiningReq techChall' 'joiningReq joiningReqExp';
   width: clamp(40rem, 100% ,120rem);
   margin-top: 1rem;
@@ -17,7 +17,9 @@ body {
   transform: rotate(-20deg); 
   /* height:  clamp(50vh, 70% ,70vh); */
 }
-
+.custom-card {
+  width: 80%;
+}
 .card-title{
   font-family: var(--primary-font);
   font-weight: 600;
@@ -52,25 +54,42 @@ body {
 
 .showRide {
   grid-area: showRide;
+  height: 600px; 
+  width: 300px; 
   justify-self: center;
-  margin: 10rem 0 ;
+  margin: 5rem 0 ;
 }
 
 .showRide > h2{
   font-family: var(--primary-font);
   font-weight: 400;
 }
-.showRide > video{
-  border-radius: 5px;
+/* .showRide > video{
+  border-radius: 5px; */
   /* border: solid 10px #21222a; */
-  box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 200ms ease-in;
+  /* box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 200ms ease-in; 
 
-}
-.showRide > video:hover {
+}*/
+/* .showRide > video:hover {
   transform: scale(1.05);
   cursor: pointer;
+} */
+
+.phone-model-container {
+  position: absolute; 
+  border-radius: 5px;
+  top: 100px; 
+  right: 40px; 
+  width: 420px; 
+  height: 800px;
+  transition: transform 200ms ease-in;
 }
+
+/* .showRide > .phone-model-container:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+} */
 
 .tech{
   grid-area: tech;

@@ -1,7 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./carporate.css";
 import { motion } from "framer-motion";
+import { Canvas } from '@react-three/fiber';
+import { Loader } from "@react-three/drei";
+
 import Card from "./Card";
+import PhoneModel from "../../components/PhoneModel.jsx";
 import useIntersectionObserver from "../../hook/IntersectionObserver";
 
 /* IMPORT MEDIA */
@@ -10,7 +14,7 @@ import reactNative from "../../assets/images/reactNative.png";
 import expo from "../../assets/images/expo.png";
 import googleMaps from "../../assets/images/googleMaps.png";
 import firebase from "../../assets/images/firebase.png";
-import showRide from "../../assets/images/showRide.mp4";
+// import showRide from "../../assets/images/showRide.mp4";
 import joiningReq from "../../assets/images/joiningReq.mp4";
 
 interface Props {}
@@ -34,9 +38,9 @@ const Work: React.FC<Props> = () => {
     console.log(el1);
     console.log(el2);
   }, []);
-  function onClickShowRide() {
-    showRideVideo.current.play();
-  }
+  // function onClickShowRide() {
+  //   showRideVideo.current.play();
+  // }
   function onClickJoiningReq() {
     joiningReqVideo.current.play();
   }
@@ -85,7 +89,7 @@ const Work: React.FC<Props> = () => {
           Carporate with Google Maps API
         </p>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         ref={showRideRef}
         initial={{ opacity: 0 }}
         animate={{ opacity: isShowRideInView ? 1 : 0 }}
@@ -99,6 +103,29 @@ const Work: React.FC<Props> = () => {
           onHoverStart={onHoverShowRide}
           src={showRide}
         />
+      </motion.div> */}
+      <motion.div
+        ref={showRideRef}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isShowRideInView ? 1 : 0 }}
+        transition={{ duration: 0.5 }}
+        onHoverStart={onHoverShowRide}
+
+        className="showRide"
+      >
+        <div className="phone-model-container" >
+        <Canvas
+            camera={ {
+                fov: 45,
+                near: 0.1,
+                far: 2000,
+                position: [ -3, 1.5, 7 ]
+            } }
+        >
+            <PhoneModel />
+        </Canvas>
+        <Loader />
+        </div>
       </motion.div>
       <h1 className="tech">Technology we used 👇</h1>
       <motion.div
